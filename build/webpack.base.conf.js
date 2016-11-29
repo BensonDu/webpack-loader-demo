@@ -34,7 +34,10 @@ module.exports = {
   },
   module: {
     loaders: [
-
+      {
+        test: /\.tpl$/,
+        loader: 'vue-template-loader'
+      },
       {
         test: /\.vue$/,
         loader: 'vue'
